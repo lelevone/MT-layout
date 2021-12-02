@@ -1,0 +1,145 @@
+
+.content.usedNav{
+  margin-left: 250px;
+  padding-top: 20px;
+}
+.promotion{
+  color: #333;
+  margin-left: 10px;
+  background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
+  box-shadow: 0 0 18.0727px rgba(0, 0, 0, 0.03);
+  border-radius: 18px;
+  padding: 30px;
+  &__row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__body{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  &__text{
+    margin-bottom: 15px;
+    flex: 1 1 auto;
+  }
+  &__img{
+    max-height: 200px;
+    img{
+      max-height: 200px;
+    }
+  }
+}
+
+.recommended{
+  margin-top: 30px;
+  margin-left: 10px;
+  color: #333333;
+
+  &__title{
+    font-size: 27px;
+    margin-bottom: 20px;
+  }
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    justify-content: space-between;
+
+  }
+  &__card{
+    color: #333;
+    background: #fff;
+    flex: 0 0 200px;
+    margin: 0 10px 30px 10px;
+    display: block;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+    }
+  }
+  &__img{
+    width: 100%;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    img{
+      border-radius: 5px;
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+  }
+  &__body{
+    padding: 5px 15px 15px 15px;
+  }
+  &__name{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__text{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  &__rating{
+    display: block;
+    color: $mainGreenColor;
+    margin-bottom: 5px;
+  }
+  &__price{
+    display: block;
+    margin-bottom: 15px;
+    flex: 1 1 auto;
+  }
+  &__toCart{
+    width: 140px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: $md1+px) {
+
+}
+
+@media (max-width: $md2+px) {
+  .content.usedNav{
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .recommended__card{
+
+    flex: 0 0 250px;
+  }
+  .recommended__row{
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .recommended__card{
+    flex: 0 0 200px;
+  }
+  .recommended__row{
+    padding: 0 50px;
+  }
+}
+@media (max-width: 550px) {
+  .recommended__card{
+    flex: 0 0 290px;
+  }
+  .recommended__row{
+    justify-content: center;
+  }
+}

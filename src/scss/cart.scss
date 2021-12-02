@@ -1,0 +1,140 @@
+.cart{
+  padding: 20px 0 15px 0 ;
+  &__row{
+    display: flex;
+  }
+  &__left{
+    flex: 1 1 auto;
+    margin-right: 15px;
+  }
+  &__right{
+    flex: 0 0 350px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 20px;
+    height: 100%;
+    background-color: #ffffff;
+  }
+  &__title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0 0 15px 0 ;
+    //margin-bottom: 15px;
+  }
+  &__list{
+  }
+  &__item{
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+
+
+    border-radius: 8px;
+    padding: 20px 20px;
+  }
+  &__total{
+    font-size: 18px;
+    margin-bottom: 15px ;
+  }
+  &__selectTitle{
+    margin-bottom: 10px;
+  }
+  &__select{
+    margin-bottom: 10px;
+  }
+  &__label{
+      padding-top: 15px;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 20px;
+    width: 100%;
+    span{
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+      input{
+        width: 100%;
+        border-radius: 8px;
+        border: 1.5px solid #EBEBEB;
+        height: 50px;
+        padding: 0 10px;
+    }
+  }
+  &__confirm{
+    width: 100%;
+  }
+}
+
+.cart-item{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left{
+    display: flex;
+    align-items: center;
+  }
+  &__right{
+    display: flex;
+    align-items: center;
+  }
+  &__img{
+    img{
+      width: 100px;
+      height: 100%;
+    }
+    margin-right: 15px;
+  }
+  &__name{
+    font-size: 17px;
+    color: #333;
+  }
+  &__amount{
+    margin-right: 10px;
+    height: 50px;
+    width: 130px;
+    border: 1.5px solid #EBEBEB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__btn{
+    background: none;
+    flex: 0 0 33.3%;
+    height: 100%;
+    font-size: 20px;
+  }
+
+  &__number{
+    font-size: 16px;
+  }
+  &__price{
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: $md2+px) {
+  .cart__row{
+    flex-wrap: wrap;
+  }
+  .cart__right{
+    flex: 1 1 auto;
+  }
+  .cart__left{
+    margin-right: 0;
+  }
+  .cart__confirm{
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 650px) {
+  .cart-item{
+    flex-wrap: wrap;
+    &__left{
+      flex: 1 1 100%;
+      margin-bottom: 10px;
+    }
+  }
+}

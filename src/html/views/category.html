@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tech store</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+  <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="/msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="header">
+    <div class="container">
+      <div class="header__row">
+        <div class="header__left header__column">
+          <button class="header__burger used">
+            <i class="fas fa-bars"></i>
+          </button>
+          <a href="/" class="header__logo">MAI TECH</a>
+        </div>
+        <label class="header__label header__column">
+          <input type="text" class="header__search" placeholder="поиск">
+        </label>
+        <div class="header__buttons header__column">
+          <a href="cart.html" class="header__btn header__cart">
+            <i class="far fa-shopping-cart"></i>
+            <span>Корзина</span>
+          </a>
+          <a href="profile.html" class="header__btn header__login">
+            <i class="far fa-user"></i>
+            <span>Войти</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class="main">
+    <div class="container">
+      <div class="main__row">
+        <nav class="nav">
+          <button class="nav__close">
+            <i class="far fa-times-circle"></i>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <i class="far fa-mobile"></i>
+              <a href="/category.html" class="nav__link">Смартфоны</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="fas fa-tv-retro"></i>
+              <a href="/category.html" class="nav__link">Телевизоры</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="far fa-desktop-alt"></i>
+              <a href="/category.html" class="nav__link">Компьютеры</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="far fa-laptop"></i>
+              <a href="/category.html" class="nav__link">Ноутбуки</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="fas fa-tablet-android-alt"></i>
+              <a href="/category.html" class="nav__link">Планшеты</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="far fa-tv"></i>
+              <a href="/category.html" class="nav__link">Мониторы</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="far fa-keyboard"></i>
+              <a href="/category.html" class="nav__link">Периферия</a>
+            </li>
+
+            <li class="nav__item">
+              <i class="far fa-headphones"></i>
+              <a href="/category.html" class="nav__link">Аксессуары</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <article class="content">
+          <section class="filter">
+            <button class="filter__close">
+              <i class="far fa-times-circle"></i>
+            </button>
+            <form action="" class="filter__form">
+              <ul class="filter__list">
+                <li class="filter__parameter">
+                  <h2 class="filter__name">
+                    <i class="fas fa-chevron-up"></i>
+                    Цена</h2>
+                  <div class="filter__priceInputs">
+                    <input type="text" class="filter__from filter__priceI " placeholder="От" id="priceFrom">
+                    <input type="text" class="filter__to filter__priceI" placeholder="До" id="priceTo">
+                  </div>
+                </li>
+                <li class="filter__parameter">
+                  <h2 class="filter__name">
+                    <i class="fas fa-chevron-up"></i>
+                    Производитель</h2>
+                  <fieldset class="filter__fieldset filter__manufacturer">
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="manufacturer" value="apple">
+                      Apple
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="manufacturer" value="samsung">
+                      Samsung
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="manufacturer" value="huawei">
+                      Huawei
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="manufacturer" value="onePlus">
+                      OnePlus
+                    </label>
+                  </fieldset>
+                </li>
+                <li class="filter__parameter">
+                  <h2 class="filter__name">
+                    <i class="fas fa-chevron-up"></i>
+                    Год выпуска</h2>
+                  <fieldset class="filter__fieldset filter__year">
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="year" value="older">
+                      Старее
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="year" value="2018">
+                      2018
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="year" value="2019">
+                      2019
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="year" value="2020">
+                      2020
+                    </label>
+                    <label class="filter__label _checkbox">
+                      <input type="checkbox" class="filter__checkbox" name="year" value="2021">
+                      2021
+                    </label>
+                  </fieldset>
+                </li>
+                <li class="filter__parameter">
+                  <h2 class="filter__name">
+                    <i class="fas fa-chevron-up"></i>
+                    Отзыв</h2>
+                  <fieldset class="filter__fieldset filter__rating">
+                    <label class="filter__label _radio">
+                      <input type="radio" class="filter__radio" name="rating" value="3">
+                      3 и выше
+                    </label>
+                    <label class="filter__label _radio">
+                      <input type="radio" class="filter__radio" name="rating" value="4">
+                      4 и выше
+                    </label>
+                    <label class="filter__label _radio">
+                      <input type="radio" class="filter__radio" name="rating" value="4.5">
+                      4.5 и выше
+                    </label>
+                  </fieldset>
+                </li>
+              </ul>
+              <button class="filter__apply btn">
+                Применить
+              </button>
+            </form>
+          </section>
+          <section class="category">
+            <div class="category__header">
+              <h1 class="category__title">Телефоны 4 товара</h1>
+              <button class="category__toggleFilter">
+                <i class="far fa-filter"></i>
+                Фильтры
+              </button>
+            </div>
+            <div class="category__row">
+              <a href="product.html" class="category__card">
+                <div class="category__left">
+                  <div class="category__img">
+                    <img src="img/product.jpg" alt="">
+                  </div>
+                  <div class="category__nameAndDesc">
+                    <h3 class="category__name">Samsung galaxy Z Fold 3</h3>
+                    <div class="category__desc">8x2.84 ГГц, 12 Гб, 1 SIM, Dynamic AMOLED 2X, 1768х2208, камера 12+12+12 Мп, NFC, 5G, GPS, 4400 мА*ч</div>
+                  </div>
+
+                </div>
+                <div class="category__right">
+                  <strong class="category__price">169 999 ₽</strong>
+                  <button class="product-card__toCart btn">
+                    В корзину
+                  </button>
+                </div>
+              </a>
+              <a href="product.html" class="category__card">
+                <div class="category__left">
+                  <div class="category__img">
+                    <img src="img/product.jpg" alt="">
+                  </div>
+                  <div class="category__nameAndDesc">
+                    <h3 class="category__name">Samsung galaxy Z Fold 3</h3>
+                    <div class="category__desc">8x2.84 ГГц, 12 Гб, 1 SIM, Dynamic AMOLED 2X, 1768х2208, камера 12+12+12 Мп, NFC, 5G, GPS, 4400 мА*ч</div>
+                  </div>
+
+                </div>
+                <div class="category__right">
+                  <strong class="category__price">169 999 ₽</strong>
+                  <button class="product-card__toCart btn">
+                    В корзину
+                  </button>
+                </div>
+              </a>
+              <a href="product.html" class="category__card">
+                <div class="category__left">
+                  <div class="category__img">
+                    <img src="img/product.jpg" alt="">
+                  </div>
+                  <div class="category__nameAndDesc">
+                    <h3 class="category__name">Samsung galaxy Z Fold 3</h3>
+                    <div class="category__desc">8x2.84 ГГц, 12 Гб, 1 SIM, Dynamic AMOLED 2X, 1768х2208, камера 12+12+12 Мп, NFC, 5G, GPS, 4400 мА*ч</div>
+                  </div>
+
+                </div>
+                <div class="category__right">
+                  <strong class="category__price">169 999 ₽</strong>
+                  <button class="product-card__toCart btn">
+                    В корзину
+                  </button>
+                </div>
+              </a>
+
+            </div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__column footer__about">
+          <p>Разработано студентом МАИ</p>
+          <p>группа М3О-232Б-20</p>
+          <p>Новиков Роман</p>
+        </div>
+        <div class="footer__column footer__contacts">
+          <div class="footer__email">Email: <a href="mailto:job.novikovroman@gmail.com">job.novikovroman@gmail.com</a></div>
+          <div class="footer__tg">Telegram: <a href="https://t.me/rmnovik">@rmnovik</a></div>
+          <div class="footer__gitHub"><a href="https://github.com/lelevone">GitHub</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

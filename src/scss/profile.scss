@@ -1,0 +1,128 @@
+.profile{
+  &__content{
+    padding: 15px 0;
+  }
+}
+
+.profile-nav{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  &__btn{
+
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 50px;
+    background: none;
+    color: $mainGreenColor;
+    border: 1px solid $mainGreenColor;
+    border-radius: 15px;
+    &.active{
+      color: #fff;
+      background-color: $mainGreenColor;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+    span{
+      font-size: 20px;
+    }
+    i{
+      font-size: 55px;
+    }
+  }
+}
+
+.profile-personal{
+  &__form{
+    display: flex;
+  }
+  &__column{
+    flex: 0 0 50%;
+  }
+  &__title{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &__avatar{
+    margin-bottom: 10px;
+    img{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-right: 30px;
+
+    }
+    display: flex;
+    align-items: center;
+  }
+  &__avatarInput{
+    input{
+      display: none;
+    }
+    cursor: pointer;
+
+
+    span{
+      display: inline-block;
+      line-height: 30px;
+      text-decoration: underline;
+      font-size: 20px;
+      max-width: 50px;
+      color: $mainGreenColor;
+    }
+  }
+  &__submit{
+    border-radius: 8px;
+  }
+}
+
+.profile-personal__label{
+  padding-top: 15px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  span{
+    font-size: 13px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    margin-bottom: 15px;
+  }
+  input{
+    min-width: 280px;
+
+    border-radius: 8px;
+    border: 1.5px solid #EBEBEB;
+    height: 50px;
+    padding: 0 10px;
+  }
+
+}
+
+@media (max-width: $md3+px) {
+  .profile-personal{
+    &__form{
+      flex-wrap: wrap;
+    }
+    &__column{
+      flex: 1 1 100%;
+    }
+  }
+}
+
+@media (max-width: 625px) {
+  .profile-personal__label{
+    width: 100%;
+    input{
+      width: 100%;
+    }
+  }
+}
