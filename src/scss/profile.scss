@@ -97,7 +97,7 @@
     margin-bottom: 15px;
   }
   input{
-    min-width: 280px;
+    min-width: 350px;
 
     border-radius: 8px;
     border: 1.5px solid #EBEBEB;
@@ -115,10 +115,15 @@
     &__column{
       flex: 1 1 100%;
     }
+    &__label{
+      input{
+        min-width: 280px;
+      }
+    }
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 645px) {
   .profile-personal__label{
     width: 100%;
     input{

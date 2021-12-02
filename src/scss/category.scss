@@ -64,7 +64,7 @@ font-size: 17px;
     display: inline-block;
     font-weight: 500;
     font-size: 28px;
-    margin-right: 10px;
+    margin: 15px 10px 15px 0;
   }
   &__row{
     padding: 0 10px 10px 10px;
@@ -92,9 +92,11 @@ font-size: 17px;
     margin-right: 10px;
   }
   &__name{
+    display: inline-block;
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 15px;
+    color: #333;
   }
   &__desc{
     font-size: 13.5px;
@@ -193,6 +195,7 @@ font-size: 17px;
     }
     &__title{
       font-size: 24px;
+      margin: 15px 0;
     }
     &__header{
       margin-bottom: 10px;
@@ -200,6 +203,7 @@ font-size: 17px;
 
     &__name{
       font-size: 18px;
+
     }
     &__desc{
       font-size: 12px;
