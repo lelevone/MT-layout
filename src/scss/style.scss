@@ -1,14 +1,6 @@
-//<Подключаем шрифты>=======================================================================================
-//</Подключаем шрифты>=======================================================================================
-
-//<Иконочные шрифты>==========================================================================================
-//</Иконочные шрифты>==========================================================================================
-
 //<Шрифт по умолчанию>==========================================================================================
 $fontFamily: Roboto;
 //</Шрифт по умолчанию>==========================================================================================
-
-
 
 //<ПЕРЕМЕННЫЕ>===========================================================================================================
 $minWidth: 320px;
@@ -24,134 +16,147 @@ $mainGreenColor: #00AC4E;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 body {
-	color: #000;
-	font-size: 14px;
-	&._lock {
-		overflow: hidden;
-	}
+  color: #000;
+  font-size: 14px;
+
+  &._lock {
+    overflow: hidden;
+  }
 }
+
 //</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	&._loaded {
-	}
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 //</ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
 .container {
-	min-height: 100%;
-	height: 100%;
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
+  min-height: 100%;
+  height: 100%;
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
 }
-.main{
-	margin-top: 80px;
-	background-color: rgb(246, 246, 246);
-	flex: 1 1 auto;
-	&__row{
-		padding: 0 10px;
-		display: flex;
-		@media (max-width: 506px) {
-			padding: 0;
-		}
-	}
-	@media(max-width: 506px) {
-		margin-top: 100px;
 
-	}
+.main {
+  margin-top: 80px;
+  background-color: rgb(246, 246, 246);
+  flex: 1 1 auto;
+
+  &__row {
+    padding: 0 10px;
+    display: flex;
+    @media (max-width: 506px) {
+      padding: 0;
+    }
+  }
+
+  @media(max-width: 506px) {
+    margin-top: 100px;
+
+  }
 }
+
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
-.btn{
-	cursor: pointer;
-	background: $mainGreenColor;
-	color: #fff;
-	display: inline-block;
-	height: 40px;
-	width: 180px;
-	border-radius: 15px;
+.btn {
+  cursor: pointer;
+  background: $mainGreenColor;
+  color: #fff;
+  display: inline-block;
+  height: 40px;
+  width: 180px;
+  border-radius: 15px;
 }
-._select{
-	&__header{
-		width: 100%;
-		border-radius: 8px;
-		border: 1.5px solid #EBEBEB;
-		height: 50px;
-		padding: 0 10px;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	&__list{
-		display: none;
-	}
+
+._select {
+  &__header {
+    width: 100%;
+    border-radius: 8px;
+    border: 1.5px solid #EBEBEB;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: none;
+  }
 }
-._checkbox{
-	position: relative;
-	padding-left: 15px;
-	user-select: none;
-	input{
-		height: 0;
-		width: 0;
-		&::after{
-			content: "";
-			display: inline-block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 0.9em;
-			height: 0.9em;
-			//background: $mainGreenColor;
-			border-radius: 5px;
-			border: 1px solid $mainGreenColor;
-		}
-		&:checked::after{
-			background-color: $mainGreenColor;
-		}
-	}
+
+._checkbox {
+  position: relative;
+  padding-left: 15px;
+  user-select: none;
+
+  input {
+    height: 0;
+    width: 0;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0.9em;
+      height: 0.9em;
+      border-radius: 5px;
+      border: 1px solid $mainGreenColor;
+    }
+
+    &:checked::after {
+      background-color: $mainGreenColor;
+    }
+  }
 
 }
-._radio{
-	position: relative;
-	padding-left: 15px;
-	user-select: none;
-	input{
-		height: 0;
-		width: 0;
-		&::after{
-			content: "";
-			display: inline-block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 0.8em;
-			height: 0.8em;
-			//background: $mainGreenColor;
-			border-radius: 50%;
-			border: 1px solid $mainGreenColor;
-		}
-		&:checked::after{
-			background-color: $mainGreenColor;
-		}
-	}
+
+._radio {
+  position: relative;
+  padding-left: 15px;
+  user-select: none;
+
+  input {
+    height: 0;
+    width: 0;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0.8em;
+      height: 0.8em;
+      border-radius: 50%;
+      border: 1px solid $mainGreenColor;
+    }
+
+    &:checked::after {
+      background-color: $mainGreenColor;
+    }
+  }
 }
+
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 @import "header";
 @import "nav";
@@ -161,15 +166,13 @@ body {
 @import "profile";
 @import "cart";
 @import "category";
-
-
-
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
+
 //===================================================================================================================================
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================

@@ -1,147 +1,186 @@
-
-.content.usedNav{
+.content.usedNav {
   margin-left: 250px;
   padding-top: 20px;
 }
-.promotion{
+
+.promotion {
   color: #333;
   margin-left: 10px;
   background: linear-gradient(180deg, #F1F1FB 0%, #EBEBF5 100%);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
-
   border-radius: 18px;
   padding: 30px;
-  &__row{
+
+  &__row {
+  }
+
+  &__body {
     display: flex;
     justify-content: space-between;
   }
-  &__body{
-    display: flex;
-    flex-direction: column;
-  }
-  &__title{
+
+  &__title {
     font-size: 32px;
     margin-bottom: 10px;
   }
-  &__text{
+
+  &__text {
     margin-bottom: 15px;
     flex: 1 1 auto;
   }
-  &__img{
-    max-height: 200px;
-    img{
+
+  &__img {
+    flex: 0 0 200px;
+
+    img {
+      height: auto;
       max-height: 200px;
     }
   }
 }
 
-.recommended{
+.recommended {
   margin-top: 30px;
   margin-left: 10px;
   color: #333333;
 
-  &__title{
+  &__title {
     font-size: 27px;
     margin-bottom: 20px;
+    font-weight: 500;
   }
-  &__row{
+
+  &__row {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -10px;
-    justify-content: space-between;
-
+    margin: 0 -15px;
+    justify-content: flex-start;
   }
-  &__card{
+
+  &__card {
     color: #333;
     background: #fff;
-    flex: 0 0 200px;
-    margin: 0 10px 30px 10px;
-    display: block;
+    flex: 0 0 calc(25% - 30px);
+    margin: 0 15px 30px;
+    display: flex;
     flex-direction: column;
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
     }
   }
-  &__img{
+
+  &__img {
     width: 100%;
     margin-bottom: 10px;
     display: inline-block;
     border-radius: 5px;
-    img{
+
+    img {
       border-radius: 5px;
       width: 100%;
-      height: 120px;
+      max-height: 120px;
       object-fit: cover;
     }
   }
-  &__body{
+
+  &__body {
     padding: 5px 15px 15px 15px;
   }
-  &__name{
+
+  &__name {
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 18px;
     color: #333;
   }
-  &__text{
+
+  &__text {
     font-size: 14px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 15px;
+    flex: 1 1 auto;
   }
-  &__rating{
+
+  &__rating {
     display: block;
     color: $mainGreenColor;
     margin-bottom: 5px;
   }
-  &__price{
+
+  &__price {
     display: block;
     margin-bottom: 15px;
     flex: 1 1 auto;
   }
-  &__toCart{
+
+  &__toCart {
     width: 140px;
     border-radius: 5px;
   }
 }
 
 @media (max-width: $md1+px) {
+  .recommended {
+    &__row {
+      margin: 0 -10px;
+    }
 
+    &__card {
+      margin: 0 10px 30px;
+      flex: 0 0 calc(33% - 20px);
+    }
+  }
 }
 
 @media (max-width: $md2+px) {
-  .content.usedNav{
+  .content.usedNav {
     margin-left: 0;
   }
 }
 
-@media (max-width: 700px) {
-  .recommended__card{
-
-    flex: 0 0 250px;
-  }
-  .recommended__row{
-    padding: 0 50px;
-  }
-}
-
 @media (max-width: 650px) {
-  .recommended__card{
-    flex: 0 0 200px;
-  }
-  .recommended__row{
-    padding: 0 50px;
+  .recommended {
+    &__row {
+      margin: 0 -15px;
+    }
+
+    &__card {
+      flex: 0 0 calc(50% - 30px);
+    }
   }
 }
-@media (max-width: 550px) {
-  .recommended__card{
-    flex: 0 0 290px;
+
+@media (max-width: 560px) {
+  .promotion{
+    &__body{
+      flex-wrap: wrap;
+      margin-bottom: 15px;
+    }
+    &__img{
+      //flex: 1 1 100%;
+      //text-align: center;
+    }
+    &__buttons{
+      text-align: left;
+    }
+    &__btn{
+      width: 200px;
+    }
   }
-  .recommended__row{
-    justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .recommended {
+    &__row{
+      margin: 0;
+    }
+    &__card{
+      flex: 1 1 100%;
+    }
   }
 }

@@ -1,4 +1,4 @@
-.header{
+.header {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
   position: fixed;
   top: 0;
@@ -6,43 +6,51 @@
   right: 0;
   background: #fff;
   z-index: 50;
-  &__row{
+
+  &__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 80px;
     margin: 0 -10px;
   }
-  &__left{
+
+  &__left {
     display: flex;
     align-items: center;
   }
-  &__burger{
+
+  &__burger {
     display: none;
     font-size: 24px;
     color: #333;
     background: none;
     margin-right: 15px;
-    &.used{
+
+    &.used {
       display: inline-block;
     }
   }
-  &__column{
+
+  &__column {
     margin: 0 10px;
   }
-  &__logo{
+
+  &__logo {
     color: $mainGreenColor;
     font-weight: 700;
     font-size: 24px;
     cursor: pointer;
     user-select: none;
   }
-  &__label{
+
+  &__label {
     flex: 1 1 auto;
     height: 40px;
     position: relative;
     min-width: 200px;
-    &::before{
+
+    &::before {
       z-index: 3;
       content: "";
       position: absolute;
@@ -54,7 +62,8 @@
       border-radius: 10px;
     }
   }
-  &__search{
+
+  &__search {
     min-width: 200px;
     color: #333;
     font-size: 18px;
@@ -66,62 +75,60 @@
     position: relative;
     display: inline-block;
   }
-  &__buttons{
 
-  }
-  &__btn{
+  &__btn {
     background: none;
     color: #333;
     font-size: 18px;
     font-weight: 500;
+
     i {
       color: $mainGreenColor;
     }
   }
-  &__cart{
+
+  &__cart {
     margin-right: 15px;
   }
 }
 
 @media (max-width: $md2+px) {
-  .header__left{
-  }
-  .header__burger{
+  .header__burger {
     display: inline-block;
   }
 }
 
 @media (max-width: $md3+px) {
-  .header__btn>span{
+  .header__btn > span {
     display: none;
   }
 }
 
 @media (max-width: 506px) {
-  .header{
+  .header {
     height: 100px;
   }
-  .header__row{
+  .header__row {
     padding: 10px 0;
     flex-wrap: wrap;
   }
-  .header__label{
+  .header__label {
     order: 3;
     margin-top: 10px;
   }
-  .header__left{
+  .header__left {
     order: 1;
   }
-  .header__buttons{
+  .header__buttons {
     order: 2
   }
-  .header__btn>span{
+  .header__btn > span {
     display: inline;
   }
 }
 
 @media (max-width: 380px) {
-  .header__btn>span{
+  .header__btn > span {
     display: none;
   }
 }

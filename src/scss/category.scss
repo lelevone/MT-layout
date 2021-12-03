@@ -1,4 +1,4 @@
-.filter{
+.filter {
   background-color: #fff;
   width: 300px;
   position: fixed;
@@ -9,56 +9,68 @@
   display: block;
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
-  &.active{
+
+  &.active {
     display: block !important;
   }
-  &__close{
+
+  &__close {
     display: none;
   }
-  &__name{
+
+  &__name {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 15px;
     cursor: pointer;
   }
-  &__parameter{
+
+  &__parameter {
     padding: 15px 0;
     border-bottom: 1px solid #eaeaea;
   }
-  &__priceInputs{
+
+  &__priceInputs {
     display: flex;
     justify-content: space-between;
   }
-  &__priceI{
+
+  &__priceI {
     display: inline-block;
     width: calc(50% - 5px);
     height: 40px;
     padding: 0 10px;
     border: 2px solid #dcdcdc;
     border-radius: 8px;
-    &:first-child{
+
+    &:first-child {
       margin-right: 10px;
     }
   }
-  &__fieldset{
+
+  &__fieldset {
     display: flex;
     flex-direction: column;
   }
-  &__label{
-font-size: 17px;
+
+  &__label {
+    font-size: 17px;
     margin-bottom: 5px;
   }
-  &__apply{
+
+  &__apply {
     width: 100%;
   }
 }
 
-.category{
+.category {
   margin-left: 300px;
-  &__header{
+
+  &__header {
     padding-left: 10px;
   }
-  &__title{
+
+  &__title {
     color: #333;
 
     display: inline-block;
@@ -66,10 +78,12 @@ font-size: 17px;
     font-size: 28px;
     margin: 15px 10px 15px 0;
   }
-  &__row{
+
+  &__row {
     padding: 0 10px 10px 10px;
   }
-  &__card{
+
+  &__card {
     color: #333;
     display: flex;
     justify-content: space-between;
@@ -79,92 +93,108 @@ font-size: 17px;
     border-radius: 8px;
     margin-bottom: 15px;
     transition: 0.2s ease-in;
+
     &:hover {
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
     }
   }
-  &__img{
-    img{
+
+  &__img {
+    margin-right: 10px;
+
+    img {
       max-width: 160px;
       height: 100%;
       object-fit: contain;
     }
-    margin-right: 10px;
   }
-  &__name{
+
+  &__name {
     display: inline-block;
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 15px;
     color: #333;
   }
-  &__desc{
-    font-size: 13.5px;
 
+  &__desc {
+    font-size: 13.5px;
   }
-  &__left{
+
+  &__left {
     display: flex;
     margin-right: 40px;
   }
-  &__price{
+
+  &__price {
     display: block;
     text-align: right;
     font-size: 19px;
     margin-bottom: 15px;
   }
-  &__toggleFilter{
+
+  &__toggleFilter {
     background: none;
     color: $mainGreenColor;
     display: none;
   }
-  &__toCart{
+
+  &__toCart {
     position: relative;
     z-index: 5;
   }
 }
 
 @media(max-width: $md1 + px) {
-  .category__desc{
+  .category__desc {
     font-size: 12px;
   }
 }
 
 @media(max-width: $md2 + px) {
-  .filter{
+  .filter {
     display: none;
-  max-height: calc(100% - 165px);
+    max-height: calc(100% - 165px);
     z-index: 60;
     margin-top: 65px;
   }
-  .category{
+  .category {
     margin-left: 0;
+
+    &__toggleFilter {
+      display: inline-block;
+    }
   }
-  .category__toggleFilter{
-    display: inline-block;
-  }
+
 }
 
 @media (max-width: $md3 + px) {
-  .category__card{
-    flex-wrap: wrap;
+  .category {
+    &__card {
+      flex-wrap: wrap;
+    }
+
+    &__desc {
+      font-size: 14px;
+    }
+
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+
+    &__left {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
+    &__price {
+      margin-right: 10px;
+      margin-bottom: 0;
+      flex: 0 0 auto;
+    }
   }
-  .category__desc{
-    font-size: 14px;
-  }
-  .category__right{
-    display: flex;
-    align-items: center;
-  }
-  .category__left{
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .category__price{
-    margin-right: 10px;
-    margin-bottom: 0;
-    flex: 0 0 auto;
-  }
-  .filter{
+  .filter {
     padding: 40px 20px 20px 20px;
     margin: 0;
     max-height: 100%;
@@ -173,7 +203,8 @@ font-size: 17px;
     bottom: 0;
     right: 0;
     width: 100%;
-    &__close{
+
+    &__close {
       color: $mainGreenColor;
       display: block;
       position: absolute;
@@ -193,22 +224,26 @@ font-size: 17px;
         max-width: 80px;
       }
     }
-    &__title{
+
+    &__title {
       font-size: 24px;
-      margin: 15px 0;
+      margin: 15px 15px 15px 0;
     }
-    &__header{
+
+    &__header {
       margin-bottom: 10px;
     }
 
-    &__name{
+    &__name {
       font-size: 18px;
 
     }
-    &__desc{
+
+    &__desc {
       font-size: 12px;
     }
-    &__price{
+
+    &__price {
       font-size: 17px;
     }
   }

@@ -2,45 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
   <title>Tech store</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
-  <link rel="stylesheet" href="https://static.fontawesome.com/css/fontawesome-app.css">
+  <link href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+  <link href="https://static.fontawesome.com/css/fontawesome-app.css" rel="stylesheet">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
-  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="/msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+  <link href="favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+  <link href="favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+  <link href="favicon/site.webmanifest" rel="manifest">
+  <link color="#5bbad5" href="favicon/safari-pinned-tab.svg" rel="mask-icon">
+  <meta content="#da532c" name="/msapplication-TileColor">
+  <meta content="#ffffff" name="theme-color">
 </head>
 <body>
 <div class="wrapper">
-
   <header class="header">
     <div class="container">
       <div class="header__row">
         <div class="header__left header__column">
-          <button class="header__burger used">
+          <button class="header__burger used" id="burger">
             <i class="fas fa-bars"></i>
           </button>
-          <a href="/" class="header__logo">MAI TECH</a>
+          <a class="header__logo" href="/">MAI TECH</a>
         </div>
         <label class="header__label header__column">
-          <input type="text" class="header__search" placeholder="поиск">
+          <input class="header__search" placeholder="поиск" type="text">
         </label>
         <div class="header__buttons header__column">
-          <a href="cart.html" class="header__btn header__cart">
+          <a class="header__btn header__cart" href="cart.html">
             <i class="far fa-shopping-cart"></i>
             <span>Корзина</span>
           </a>
-          <a href="profile.html" class="header__btn header__login">
+          <a class="header__btn header__login" href="profile.html">
             <i class="far fa-user"></i>
             <span>Войти</span>
           </a>
@@ -49,59 +48,55 @@
     </div>
   </header>
 
-
-
   <main class="main">
     <div class="container">
       <div class="main__row">
-        <nav class="nav">
-          <button class="nav__close">
+        <nav class="nav" id="nav">
+          <button class="nav__close" id="navClose">
             <i class="far fa-times-circle"></i>
           </button>
           <ul class="nav__list">
             <li class="nav__item">
               <i class="far fa-mobile"></i>
-              <a href="/category.html" class="nav__link">Смартфоны</a>
+              <a class="nav__link" href="/category.html">Смартфоны</a>
             </li>
 
             <li class="nav__item">
               <i class="fas fa-tv-retro"></i>
-              <a href="/category.html" class="nav__link">Телевизоры</a>
+              <a class="nav__link" href="/category.html">Телевизоры</a>
             </li>
 
             <li class="nav__item">
               <i class="far fa-desktop-alt"></i>
-              <a href="/category.html" class="nav__link">Компьютеры</a>
+              <a class="nav__link" href="/category.html">Компьютеры</a>
             </li>
 
             <li class="nav__item">
               <i class="far fa-laptop"></i>
-              <a href="/category.html" class="nav__link">Ноутбуки</a>
+              <a class="nav__link" href="/category.html">Ноутбуки</a>
             </li>
 
             <li class="nav__item">
               <i class="fas fa-tablet-android-alt"></i>
-              <a href="/category.html" class="nav__link">Планшеты</a>
+              <a class="nav__link" href="/category.html">Планшеты</a>
             </li>
 
             <li class="nav__item">
               <i class="far fa-tv"></i>
-              <a href="/category.html" class="nav__link">Мониторы</a>
+              <a class="nav__link" href="/category.html">Мониторы</a>
             </li>
 
             <li class="nav__item">
               <i class="far fa-keyboard"></i>
-              <a href="/category.html" class="nav__link">Периферия</a>
+              <a class="nav__link" href="/category.html">Периферия</a>
             </li>
 
             <li class="nav__item">
               <i class="far fa-headphones"></i>
-              <a href="/category.html" class="nav__link">Аксессуары</a>
+              <a class="nav__link" href="/category.html">Аксессуары</a>
             </li>
           </ul>
         </nav>
-
-
 
         <div class="content">
           <section class="product">
@@ -114,15 +109,16 @@
                   <div class="product__main product__column">
 
                     <div class="product__img">
-                      <img src="img/product.jpg" alt="">
+                      <img alt="Samsung galaxy Z Fold 3" src="img/product.jpg">
                     </div>
                   </div>
                   <div class="product__column product__card product-card">
                     <div class="product-card__text">
-                      8x2.84 ГГц, 12 Гб, 1 SIM, Dynamic AMOLED 2X, 1768х2208, камера 12+12+12 Мп, NFC, 5G, GPS, 4400 мА*ч
+                      8x2.84 ГГц, 12 Гб, 1 SIM, Dynamic AMOLED 2X, 1768х2208, камера 12+12+12 Мп, NFC, 5G, GPS, 4400
+                      мА*ч
                     </div>
                     <div class="product-card__reviews">
-                      <a href="#" class="product-card__rating">
+                      <a class="product-card__rating" href="#">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -139,7 +135,6 @@
                         В корзину
                       </button>
                     </div>
-
                     <button class="btn product-card__alreadyInCart">
                       Добавлено в <i class="far fa-shopping-cart"></i>
                     </button>
@@ -151,129 +146,124 @@
                     <button class="product-tabs__btn" id="params">Параметры</button>
                     <button class="product-tabs__btn" id="reviews">Отзывы</button>
                   </nav>
-                <div class="product-tabs__content">
-                  <div class="product-tabs__desc desc">
-                    <h2 class="product-tabs__title desc__title">Описание</h2>
-                    <div class="product-tabs__body desc__body">
-                      <p>В сложенном виде Galaxy Z Fold3 — это современный смартфон с 6,2-дюймовым экраном. 1 В раскрытом виде — практически планшет. Перед вами впечатляющий экран, на котором можно просматривать контент, работать и играть, как никогда раньше.</p>
-                      <p>Благодаря режиму Flex, Galaxy Z Fold3 раскрывает свой потенциал на полную мощность.2 Этот симметричный и сбалансированный дизайн создан для того, чтобы вы получали максимум удовольствия от его использования</p>
-                    </div>
-                  </div>
-                  <div class="product-tabs__params params" >
-                    <h2 class="product-tabs__title params__title">Параметры</h2>
-                    <div class="product-tabs__body params__body">
-                      <div class="params__item">
-                        <h3>Заводские данные</h3>
-                        <div class="params__row">
-                          <div class="params__prop">Гарантия</div>
-                          <div class="param__value">12 мес.</div>
-                        </div>
-                        <div class="params__row">
-                          <div class="params__prop">Страна-производитель</div>
-                          <div class="params__value">Вьетнам</div>
-                        </div>
-                      </div>
-
-                      <div class="params__item">
-                        <h3>Экран</h3>
-                        <div class="params__row">
-                          <div class="params__prop">Диагональ экрана (дюйм)</div>
-                          <div class="params__value">7.6"</div>
-                        </div>
-                        <div class="params__row">
-                          <div class="params__prop">Разрешение экрана</div>
-                          <div class="params__value">1768х2208</div>
-                        </div>
-                        <div class="params__row">
-                          <div class="params__prop">Плотность пикселей</div>
-                          <div class="params__value">372 ppi</div>
-                        </div>
-                        <div class="params__row">
-                          <div class="params__prop">Технология изготовления экрана</div>
-                          <div class="params__value">Dynamic AMOLED 2X</div>
-                        </div>
-                        <div class="params__row">
-                          <div class="params__prop">Частота обновления экрана</div>
-                          <div class="params__value">120 Гц</div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-
-                  <div class="product-tabs__reviews reviews">
-                    <div class="product-tabs__title">Отзывы</div>
-                    <div class="reviews__row">
-
-                      <div class="reviews__item">
-
-                    <div class="reviews__top">
-                      <div class="reviews__avatar">
-                        <img src="img/avatar.png" alt="">
-                      </div>
-                      <div class="reviews__right">
-                        <div class="reviews__name">Роман Новиков</div>
-                        <div class="reviews__rating">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>
-                          <i class="far fa-star"></i>
-                        </div>
+                  <div class="product-tabs__content">
+                    <div class="product-tabs__desc desc">
+                      <h2 class="product-tabs__title desc__title">Описание</h2>
+                      <div class="product-tabs__body desc__body">
+                        <p>В сложенном виде Galaxy Z Fold3 — это современный смартфон с 6,2-дюймовым экраном. 1 В
+                          раскрытом виде — практически планшет. Перед вами впечатляющий экран, на котором можно
+                          просматривать контент, работать и играть, как никогда раньше.</p>
+                        <p>Благодаря режиму Flex, Galaxy Z Fold3 раскрывает свой потенциал на полную мощность.2 Этот
+                          симметричный и сбалансированный дизайн создан для того, чтобы вы получали максимум
+                          удовольствия от его использования</p>
                       </div>
                     </div>
-                    <div class="reviews__body">
-                      Телефон хороший, стоит очень дорого.
-                    </div>
-                      </div>
-                      <div class="reviews__item">
-
-                        <div class="reviews__top">
-                          <div class="reviews__avatar">
-                            <img src="img/avatar.png" alt="">
+                    <div class="product-tabs__params params">
+                      <h2 class="product-tabs__title params__title">Параметры</h2>
+                      <div class="product-tabs__body params__body">
+                        <div class="params__item">
+                          <h3>Заводские данные</h3>
+                          <div class="params__row">
+                            <div class="params__prop">Гарантия</div>
+                            <div class="param__value">12 мес.</div>
                           </div>
-                          <div class="reviews__right">
-                            <div class="reviews__name">Роман Новиков</div>
-                            <div class="reviews__rating">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star-half-alt"></i>
-                              <i class="far fa-star"></i>
+                          <div class="params__row">
+                            <div class="params__prop">Страна-производитель</div>
+                            <div class="params__value">Вьетнам</div>
+                          </div>
+                        </div>
+
+                        <div class="params__item">
+                          <h3>Экран</h3>
+                          <div class="params__row">
+                            <div class="params__prop">Диагональ экрана (дюйм)</div>
+                            <div class="params__value">7.6"</div>
+                          </div>
+                          <div class="params__row">
+                            <div class="params__prop">Разрешение экрана</div>
+                            <div class="params__value">1768х2208</div>
+                          </div>
+                          <div class="params__row">
+                            <div class="params__prop">Плотность пикселей</div>
+                            <div class="params__value">372 ppi</div>
+                          </div>
+                          <div class="params__row">
+                            <div class="params__prop">Технология изготовления экрана</div>
+                            <div class="params__value">Dynamic AMOLED 2X</div>
+                          </div>
+                          <div class="params__row">
+                            <div class="params__prop">Частота обновления экрана</div>
+                            <div class="params__value">120 Гц</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product-tabs__reviews reviews">
+                      <div class="product-tabs__title">Отзывы</div>
+                      <div class="reviews__row">
+                        <div class="reviews__item">
+                          <div class="reviews__top">
+                            <div class="reviews__avatar">
+                              <img alt="аватар" src="img/avatar.png">
+                            </div>
+                            <div class="reviews__right">
+                              <div class="reviews__name">Роман Новиков</div>
+                              <div class="reviews__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div class="reviews__body">
-                          Телефон хороший, стоит очень дорого.
-                        </div>
-                      </div>
-                      <div class="reviews__item">
-
-                        <div class="reviews__top">
-                          <div class="reviews__avatar">
-                            <img src="img/avatar.png" alt="">
+                          <div class="reviews__body">
+                            Телефон хороший, стоит очень дорого.
                           </div>
-                          <div class="reviews__right">
-                            <div class="reviews__name">Роман Новиков</div>
-                            <div class="reviews__rating">
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star"></i>
-                              <i class="fas fa-star-half-alt"></i>
-                              <i class="far fa-star"></i>
+                        </div>
+                        <div class="reviews__item">
+                          <div class="reviews__top">
+                            <div class="reviews__avatar">
+                              <img alt="аватар" src="img/avatar.png">
+                            </div>
+                            <div class="reviews__right">
+                              <div class="reviews__name">Роман Новиков</div>
+                              <div class="reviews__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                              </div>
                             </div>
                           </div>
+                          <div class="reviews__body">
+                            Телефон хороший, стоит очень дорого.
+                          </div>
                         </div>
-                        <div class="reviews__body">
-                          Телефон хороший, стоит очень дорого.
+                        <div class="reviews__item">
+                          <div class="reviews__top">
+                            <div class="reviews__avatar">
+                              <img alt="аватар" src="img/avatar.png">
+                            </div>
+                            <div class="reviews__right">
+                              <div class="reviews__name">Роман Новиков</div>
+                              <div class="reviews__rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="reviews__body">
+                            Телефон хороший, стоит очень дорого.
+                          </div>
                         </div>
                       </div>
-
-
                     </div>
                   </div>
-
-                </div>
                 </div>
               </div>
             </div>
@@ -288,11 +278,12 @@
       <div class="footer__row">
         <div class="footer__column footer__about">
           <p>Разработано студентом МАИ</p>
-          <p>группа М3О-232Б-20</p>
           <p>Новиков Роман</p>
+          <p><i class="far fa-copyright"></i>, 2021</p>
         </div>
         <div class="footer__column footer__contacts">
-          <div class="footer__email">Email: <a href="mailto:job.novikovroman@gmail.com">job.novikovroman@gmail.com</a></div>
+          <div class="footer__email">Email: <a href="mailto:job.novikovroman@gmail.com">job.novikovroman@gmail.com</a>
+          </div>
           <div class="footer__tg">Telegram: <a href="https://t.me/rmnovik">@rmnovik</a></div>
           <div class="footer__gitHub"><a href="https://github.com/lelevone">GitHub</a></div>
         </div>

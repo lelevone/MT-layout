@@ -1,15 +1,15 @@
-.profile{
-  &__content{
+.profile {
+  &__content {
     padding: 15px 0;
   }
 }
 
-.profile-nav{
+.profile-nav {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 20px;
-  &__btn{
 
+  &__btn {
     width: 130px;
     height: 130px;
     display: flex;
@@ -22,54 +22,63 @@
     color: $mainGreenColor;
     border: 1px solid $mainGreenColor;
     border-radius: 15px;
-    &.active{
+
+    &.active {
       color: #fff;
       background-color: $mainGreenColor;
     }
-    &:last-child{
+
+    &:last-child {
       margin-right: 0;
     }
-    span{
+
+    span {
       font-size: 20px;
     }
-    i{
+
+    i {
       font-size: 55px;
     }
   }
 }
 
-.profile-personal{
-  &__form{
+.profile-personal {
+  &__form {
     display: flex;
   }
-  &__column{
+
+  &__column {
     flex: 0 0 50%;
   }
-  &__title{
+
+  &__title {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  &__avatar{
+
+  &__avatar {
     margin-bottom: 10px;
-    img{
+    display: flex;
+    align-items: center;
+
+    img {
       width: 90px;
       height: 90px;
       border-radius: 50%;
       margin-right: 30px;
 
     }
-    display: flex;
-    align-items: center;
   }
-  &__avatarInput{
-    input{
+
+  &__avatarInput {
+    input {
       display: none;
     }
+
     cursor: pointer;
 
-
-    span{
+    span {
       display: inline-block;
       line-height: 30px;
       text-decoration: underline;
@@ -78,45 +87,48 @@
       color: $mainGreenColor;
     }
   }
-  &__submit{
+
+  &__submit {
     border-radius: 8px;
   }
-}
 
-.profile-personal__label{
-  padding-top: 15px;
-  position: relative;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-right: 10px;
-  span{
-    font-size: 13px;
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    margin-bottom: 15px;
+  &__label {
+    padding-top: 15px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 10px;
+
+    span {
+      font-size: 13px;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      margin-bottom: 15px;
+    }
+
+    input {
+      min-width: 350px;
+      border-radius: 8px;
+      border: 1.5px solid #EBEBEB;
+      height: 50px;
+      padding: 0 10px;
+    }
   }
-  input{
-    min-width: 350px;
-
-    border-radius: 8px;
-    border: 1.5px solid #EBEBEB;
-    height: 50px;
-    padding: 0 10px;
-  }
-
 }
 
 @media (max-width: $md3+px) {
-  .profile-personal{
-    &__form{
+  .profile-personal {
+    &__form {
       flex-wrap: wrap;
     }
-    &__column{
+
+    &__column {
       flex: 1 1 100%;
     }
-    &__label{
-      input{
+
+    &__label {
+      input {
         min-width: 280px;
       }
     }
@@ -124,9 +136,10 @@
 }
 
 @media (max-width: 645px) {
-  .profile-personal__label{
+  .profile-personal__label {
     width: 100%;
-    input{
+
+    input {
       width: 100%;
     }
   }
